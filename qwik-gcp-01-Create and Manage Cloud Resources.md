@@ -124,7 +124,7 @@ gcloud compute backend-services create web-backend-service \
     --global
 gcloud compute backend-services add-backend web-backend-service \
     --instance-group=lb-backend-group \
-    --instance-group-zone=us-central1-a \
+    --instance-group-zone=us-central1-b \
     --global
 gcloud compute url-maps create web-map-http \
     --default-service web-backend-service
